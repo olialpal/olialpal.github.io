@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logeo{
+    background-image: url('../IMG/fondo-inicio2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+.login{
+    background-color: rgba(255, 255, 255, 0.5);
+}
