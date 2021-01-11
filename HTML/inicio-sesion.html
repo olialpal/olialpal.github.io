@@ -13,12 +13,13 @@
     
     <div class="contenedor todo">
       <img src="../IMG/fondo-inicio2.jpg" class="fondo">
-      <div class="logo">
-        
-      </div>
-      <div class="logeo d-flex justify-content-center align-items-center">
-      <div class="card  login border-secondary mb-3" style="max-width: 20rem;">
-        <img class="logo" src="../IMG/logo.png" alt="">
+      
+      
+      <div class="logeo d-flex flex-column justify-content-center align-items-center">
+        <div class="logo d-flex justify-content-center align-items-end">
+          <img  style="width: 100%;" src="../IMG/logo.png" alt="">
+        </div>
+      <div class="card login border-secondary mb-3" style="max-width: 20rem;">
           <div class="card-body">
             
             <h3 class="card-title d-flex justify-content-center align-items-center" style="font-weight: 400;">INICIO SESIÓN</h3>
@@ -47,15 +48,15 @@
    var timeout;
 $('.todo').mousemove(function(e){
   if(timeout) clearTimeout(timeout);
-  setTimeout(callParallax.bind(null, e), 200);
+  setTimeout(callParallax.bind(null, e), 100);
   
 });
 
 function callParallax(e){
-  //parallaxIt(e, '.fondo', -100);
+  parallaxIt(e, '.logo', -20);
   parallaxIt(e, '.logeo', -100);
   //parallaxIt(e, '.slide.three', -50);
-  parallaxIt(e, '.fondo', -20);
+  parallaxIt(e, '.fondo', -10);
 }
 
 function parallaxIt(e, target, movement){
